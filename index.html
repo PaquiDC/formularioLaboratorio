@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div class="cont">
+        <form id="form">
+            <h3>Create Acount</h3>
+
+            <p>Nombre</p>
+            <div class="form-group has-error has-feedback">
+                <input id="nombre" name="nombre" class="input" type="text">
+                <span id="icon" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="icon-error" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="nameValidationResult"></p>
+            <br>
+
+            <p>Email</p>
+            <div class="form-group has-error has-feedback">
+                <input id="email" class="input" type="text">
+                <span id="iconEmail" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="iconErrorEmail" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="emailValidationResult"></p>
+            <br>
+
+            <p>Clave</p>
+            <div class="form-group has-error has-feedback">
+                <input id="clave" class="input" type="password">
+                <span id="iconClave" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="iconErrorClave" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="passValidationResult"></p>
+            <br>
+
+            <p>Confirme su clave</p>
+            <div class="form-group has-error has-feedback">
+                <input id="repClave" class="input" type="password">
+                <span id="iconRepClave" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="iconErrorRepClave" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="passRequeridValidationResult"></p>
+            <br>
+
+            <input id="check" class="button" type="button" value="ENVIAR" onclick="enviarFormulario()">
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</body>
